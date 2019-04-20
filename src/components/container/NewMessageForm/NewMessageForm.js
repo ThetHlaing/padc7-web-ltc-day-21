@@ -49,30 +49,6 @@ class NewMessageForm extends React.Component {
       .update({ status: false });
   }
 
-  handleFileOnChange = (event) => {
-    const file = this.imageFile.current.files[0];
-    var storageRef = firebase.storage().ref();
-
-    const filePath = 'message/images/' + file.name;
-    const imageRef = storageRef.child(filePath);
-
-    imageRef
-      .put(file)
-      .then(snapshot => {
-        console.log(snapshot)
-        storageRef.child(filePath)
-        .getDownloadURL().then( (url) => {
-          firestore.collection('message')
-          .add({
-            image: url,
-            created_by: this.props.user.email,
-            created_at: new Date()
-          });
-        })
-      })
-      .catch(error => { console.log(error) });
-
-  }
 
   render() {
 

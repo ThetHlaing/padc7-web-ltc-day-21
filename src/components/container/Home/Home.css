@@ -8,6 +8,10 @@
   padding: 0px 20px;
 }
 
+.message.goright {
+  text-align: right;
+}
+
 .message .info {
   font-size: 0.8em;
   color: #a1a1a1;

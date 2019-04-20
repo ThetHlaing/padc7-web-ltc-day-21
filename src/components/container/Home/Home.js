@@ -73,7 +73,7 @@ class Home extends React.Component {
         {!this.props.user && <Redirect to="/login"/>}
         <div className="messagesHolder">
             {this.state.messages.map(item => (
-              <MessageItem key={item.id} message={item} />
+              <MessageItem key={item.id} message={item} ownmessage = {item.created_by === this.props.user.email} />
             ))}
             <div id="messageEnd" ref={(el) => { this.messagesEnd = el; }}></div>
         </div>

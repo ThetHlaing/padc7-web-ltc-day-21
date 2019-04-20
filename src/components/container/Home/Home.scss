@@ -9,6 +9,10 @@ $lable-color : #a1a1a1;
 .message{
     text-align: left;
     padding:0px 20px;
+
+    &.goright{
+        text-align: right;
+    }
     .info{
         font-size:0.8em;
         color:$lable-color ;

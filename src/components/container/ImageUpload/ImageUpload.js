@@ -40,7 +40,10 @@ class ImageUpload extends React.Component {
   render() {
     return (
       <div className="uploadHolder">
-        <input ref={this.imageFile} onChange={this.handleFileOnChange} type="file" accept="image/*" />
+        <input
+          ref={this.imageFile}
+          onChange={this.handleFileOnChange}
+          type="file" accept="image/*" />
       </div>
     );
   }

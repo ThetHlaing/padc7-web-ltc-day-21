@@ -3,9 +3,13 @@ import {timeStampToDate} from '../../utilities/utilities';
 
 export default function MessageItem(props) {
     const item = props.message;
+    console.log(props.ownmessage);
     const time = timeStampToDate(item.created_at);
+    let classList = "message";
+    classList += props.ownmessage ? " goright" : "";
     return (
-        <div className="message" key={item.id}>
+        
+    <div className={classList} key={item.id}>
             <p className="content">
                 {item.content}
             </p>
