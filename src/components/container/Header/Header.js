@@ -6,7 +6,6 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import { signOutEvent } from '../../../actions/userActions';
 import { connect } from 'react-redux';
 import './Header.css';
 
@@ -20,7 +19,7 @@ class Header extends React.Component {
 
                 {this.props.user ?
                     (
-                        <span className="header-link" onClick={this.props.signOutEvent}>Sign Out</span>
+                        <span className="header-link">Sign Out</span>
                     ) : (
                         <React.Fragment>
                             <Link to="/login">Sign In</Link> | <Link to="/register">Register</Link>
@@ -35,12 +34,4 @@ class Header extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    user: state.currentUser,
-})
-
-const mapDispatchToProps = {
-    signOutEvent
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(null,null)(Header);

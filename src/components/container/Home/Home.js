@@ -21,50 +21,9 @@ class Home extends React.Component {
     this.state = {
       messages: [],
       settings: []
-    }
-
-    firestore.collection('message').onSnapshot(snapshot => {
-      const messages = [];
-      snapshot.docs.forEach(item => {
-        const message = item.data();
-        message.id = item.id;
-        messages.push(message);
-      })
-      messages.sort(
-        (a, b) => { return (a.created_at.seconds > b.created_at.seconds) ? 1 : -1 }
-      );
-
-      this.setState({
-        messages: messages
-      })
-    })
-
-
-    firestore.collection('setting').onSnapshot(snapshot => {
-      const settings = [];
-      snapshot.docs.forEach(item => {
-        const setting = item.data();
-        setting.id = item.id;
-        settings[setting.id] = setting;
-      })
-      this.setState({
-        settings: settings
-      })
-    });
-
+    }   
   }
 
-  scrollToBottom = () => {
-    this.messagesEnd.scrollIntoView({ behavior: "smooth" });
-  }
-
-  componentDidMount() {
-    this.scrollToBottom();
-  }
-  
-  componentDidUpdate() {
-    this.scrollToBottom();
-  }
 
   render() {
     const is_typing = this.state.settings['typing'] && this.state.settings['typing'].status;
@@ -72,9 +31,7 @@ class Home extends React.Component {
       <React.Fragment>
         {!this.props.user && <Redirect to="/login"/>}
         <div className="messagesHolder">
-            {this.state.messages.map(item => (
-              <MessageItem key={item.id} message={item} />
-            ))}
+
             <div id="messageEnd" ref={(el) => { this.messagesEnd = el; }}></div>
         </div>
 

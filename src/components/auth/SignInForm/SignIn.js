@@ -23,23 +23,10 @@ class SignIn extends React.Component {
         this.password = React.createRef();
     }
     successLogin = () => {
-        this.setState({
-            login: true
-        })
     }
     errorLogin = (error) => {
-        this.setState({
-            error: error
-        })
     }
     handleOnSubmit = event => {
-        event.preventDefault();
-        this.props.loginUserEvent(
-            this.email.current.value,
-            this.password.current.value,
-            this.successLogin,
-            this.errorLogin
-        );
     }
 
     render() {

@@ -23,23 +23,13 @@ class Register extends React.Component {
     }
 
     successLogin = () => {
-        this.setState({
-            login: true
-        })
+        
     }
     errorLogin = (error) => {
-        this.setState({
-            error: error
-        })
+
     }
     handleOnSubmit = event => {
-        event.preventDefault();
-        this.props.registerUserEvent(
-            this.email.current.value,
-            this.password.current.value,
-            this.successLogin,
-            this.errorLogin
-        );
+        
     }
 
     render() {

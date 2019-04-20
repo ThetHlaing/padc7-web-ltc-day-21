@@ -9,10 +9,6 @@ export default function MessageItem(props) {
             <p className="content">
                 {item.content}
             </p>
-            {
-                item.image && 
-                <img src={item.image} alt="message content"/>
-            }
             <p className="info">
                 by {item.created_by}<br />
                 at {time.month} / {time.day} / {time.year} {time.hour} : {time.minute}
