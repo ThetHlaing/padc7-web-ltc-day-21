@@ -1,0 +1,17 @@
+form.newMessageForm {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+}
+
+form.newMessageForm input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+form.newMessageForm button {
+  padding: 5px 20px;
+}
+/*# sourceMappingURL=NewMessageForm.css.map */

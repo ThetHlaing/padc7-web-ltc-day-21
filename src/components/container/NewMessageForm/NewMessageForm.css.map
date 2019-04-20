@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,AAAA,eAAe,CAAA;EACf,UAAU,EAAC,IAAI;EACf,OAAO,EAAC,IAAI;EACZ,OAAO,EAAC,SAAS;CAQpB;;AAXD,AAII,IAJA,AAAA,eAAe,CAIf,KAAK,CAAA;EACD,OAAO,EAAC,QAAQ;EAChB,KAAK,EAAC,IAAI;CACb;;AAPL,AAQI,IARA,AAAA,eAAe,CAQf,MAAM,CAAA;EACF,OAAO,EAAC,QAAQ;CACnB",
+    "sources": [
+        "NewMessageForm.scss"
+    ],
+    "names": [],
+    "file": "NewMessageForm.css"
+}

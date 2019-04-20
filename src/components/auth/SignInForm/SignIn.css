@@ -1,0 +1,17 @@
+.sign-in-form {
+  border: 1px solid #a1a1a1;
+  text-align: left;
+  padding: 30px 50px;
+  line-height: 2em;
+}
+
+.sign-in-form label {
+  display: inline-block;
+  min-width: 80px;
+}
+
+.sign-in-form .sign-in-error {
+  color: red;
+  padding: 10px 20px;
+}
+/*# sourceMappingURL=SignIn.css.map */

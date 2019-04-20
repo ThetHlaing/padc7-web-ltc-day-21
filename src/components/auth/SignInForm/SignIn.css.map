@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,MAAM,EAAC,iBAAiB;EACxB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAC,SAAS;EACjB,WAAW,EAAE,GAAG;CAWnB;;AAfD,AAMI,aANS,CAMT,KAAK,CAAA;EACD,OAAO,EAAE,YAAY;EACrB,SAAS,EAAC,IAAI;CACjB;;AATL,AAWI,aAXS,CAWT,cAAc,CAAA;EACV,KAAK,EAAC,GAAG;EACT,OAAO,EAAE,SAAS;CACrB",
+    "sources": [
+        "SignIn.scss"
+    ],
+    "names": [],
+    "file": "SignIn.css"
+}

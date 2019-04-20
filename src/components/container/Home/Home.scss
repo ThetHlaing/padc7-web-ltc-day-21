@@ -1,0 +1,24 @@
+$lable-color : #a1a1a1;
+
+
+.messagesHolder{
+    height: 72vh;
+    overflow-y: scroll;
+}
+
+.message{
+    text-align: left;
+    padding:0px 20px;
+    .info{
+        font-size:0.8em;
+        color:$lable-color ;
+    }
+    img{
+        max-width: 90%;
+    }
+}
+
+.typing-indicator{
+    font-size:0.6em;
+    color:$lable-color ;
+}
